@@ -1,0 +1,82 @@
+/* Page Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    margin: 0;
+    padding: 0;
+}
+
+/* Heading */
+h2 {
+    margin-top: 30px;
+    color: #ffffff;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+/* Table Container */
+table {
+    margin: 40px auto;
+    border-collapse: collapse;
+    width: 65%;
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Table Header */
+th {
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    color: white;
+    padding: 14px;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Table Cells */
+td {
+    padding: 12px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+/* Zebra Striping */
+tr:nth-child(even) {
+    background-color: #f4f7ff;
+}
+
+tr:nth-child(odd) {
+    background-color: #eef1ff;
+}
+
+/* Hover Effect */
+tr:hover {
+    background-color: #dbe4ff;
+    transform: scale(1.01);
+}
+
+/* Pass / Fail Styling */
+.pass {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.fail {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    table {
+        width: 90%;
+    }
+
+    th, td {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
